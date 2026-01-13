@@ -6,6 +6,7 @@ import HomeNavigator from "./HomeNavigator";
 import { Ionicons } from "@expo/vector-icons";
 import CartNavigator from "./CartNavigator";
 import CartIcon from "../Shared/CartIcon";
+import UserNavigator from "./UserNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -75,7 +76,7 @@ const Main = () => {
             />
             <Tab.Screen
                 name="User"
-                component={HomeNavigator}
+                component={UserNavigator}
                 options={{
                     tabBarIcon: ({ color }) => {
                         return <Ionicons
